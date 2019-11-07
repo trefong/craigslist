@@ -12,12 +12,15 @@
 <% @articles.each do |article|%>
   <h1>TITLE:<%= article.title %></h1>
   <h3>BODY:<%= article.body %><h3>
-  <h3> CATEGORY:<%= article.category%><h3>
-
-  <br>
+  <h3> CATEGORY: <%= Category.find(article.category_id).title %>
+ 
     <br>
     <br>
 <% end %>
+
+<br>
+<h2>
+</h2>
 
 </div>
 </div>
