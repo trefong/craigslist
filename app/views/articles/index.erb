@@ -10,12 +10,12 @@
 
 <div class="container">
 <% @articles.each do |article|%>
-  <h1>TITLE:<%= article.title %></h1>
+  <h3>TITLE:<%= article.title %></h3>
   <h3>BODY:<%= article.body %><h3>
   <h3> CATEGORY: <%= Category.find(article.category_id).title %>
- 
-    <br>
-    <br>
+  <br>
+  <br>
+  ----------------------
 <% end %>
 
 <br>
