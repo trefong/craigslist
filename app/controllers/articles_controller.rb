@@ -1,27 +1,30 @@
 class ArticlesController < ApplicationController
 
-    def index
-        @articles = Article.includes(:category)
+  def index
+    @articles = Article.includes(:category).all
+  end
+
+  def new
+    @article = Article.new
+  end
+
+  def create
+    @new_article = Article.create(article_params)
+    if !@new_article.errors
+     redirect_to '/articles'
+    else
+      redirect_to '/'
     end
-
-    def new
-        @article = Article.new
-    end
-
-    def create
-        @new_article = Article.new(article_params)
-        @new_article.category_id = params[:article][:category_id]
-            if @new_article.save
-             redirect_to '/articles'
-            else
-                redirect_to '/'
-            end
-    end
+  end
 
 
-    private
+  private
 
-        def article_params
-            params.require(:article).permit(:title, :body)
-        end
+  def article_params
+    params.require(:article).permit(
+      :title, 
+      :body,
+      :category_id
+    )
+  end
 end
