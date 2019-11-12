@@ -1,4 +1,13 @@
-### Checklist
+###Checklist
+
+#PART 1 
+
 - [ ] Articles index page - see what categories the article belongs to; (avoid an n+1) look up what .includes() is; use it in controller on the model
-- [ ] Categories index page 
-- [ ] Create Article page - ability to assign categories to that article 
+- [X] Categories index page 
+- [X] Create Article page - ability to assign categories to that article 
+
+#PART 2 
+- [ ] Allow on creating an article to have multiple categories.
+- [ ] Articles index page, able see multiple categories
+- [ ] Edit/Update articles 
+- [ ] Create a job to send yourself an email when an article is updated/edited
