@@ -1,4 +1,11 @@
 ### Checklist
-- [ ] Articles index page - see what categories the article belongs to; (avoid an n+1) look up what .includes() is; use it in controller on the model
-- [ ] Categories index page 
-- [ ] Create Article page - ability to assign categories to that article 
+
+##### Part 1
+- [X] Articles index page - see what categories the article belongs to; (avoid an n+1) look up what .includes() is; use it in controller on the model
+- [X] Categories index page 
+- [X] Create Article page - ability to assign categories to that article 
+
+##### Part 2
+- [ ] Re-design the articles index page using CSS GRID :) 
+- [ ] add your own .scss file 
+- [ ] when creating an article, add a background job to send yourself an email notification
